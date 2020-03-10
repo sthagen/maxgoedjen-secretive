@@ -20,7 +20,7 @@ extension SecureEnclave {
             DistributedNotificationCenter.default().addObserver(forName: .secretStoreUpdated, object: nil, queue: .main) { _ in
                 self.reloadSecrets(notify: false)
             }
-            loadSecrets()
+//            loadSecrets()
         }
 
         // MARK: Public API

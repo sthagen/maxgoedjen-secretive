@@ -9,8 +9,9 @@ public struct OpenSSHKeyWriter {
 
     public func data<SecretType: Secret>(secret: SecretType) -> Data {
         lengthAndData(of: curveType(for: secret.algorithm, length: secret.keySize).data(using: .utf8)!) +
-            lengthAndData(of: curveIdentifier(for: secret.algorithm, length: secret.keySize).data(using: .utf8)!) +
-            lengthAndData(of: secret.publicKey)
+//            lengthAndData(of: curveIdentifier(for: secret.algorithm, length: secret.keySize).data(using: .utf8)!) +
+            lengthAndData(of: secret.publicKey[9..<265])
+//            secret.publicKey[9..<265]
     }
 
     public func openSSHString<SecretType: Secret>(secret: SecretType) -> String {
