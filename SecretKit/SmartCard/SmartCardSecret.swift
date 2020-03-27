@@ -7,6 +7,7 @@ extension SmartCard {
 
         public let id: Data
         public let name: String
+        public let requiresAuthentication = true
         public let algorithm: Algorithm
         public let keySize: Int
         public let publicKey: Data

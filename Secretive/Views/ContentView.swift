@@ -40,7 +40,11 @@ struct ContentView<UpdaterType: UpdaterProtocol, AgentStatusCheckerType: AgentSt
                                 } else {
                                     ForEach(store.secrets) { secret in
                                         NavigationLink(destination: SecretDetailView(secret: secret), tag: secret.id, selection: self.$active) {
-                                            Text(secret.name)
+                                            if secret.requiresAuthentication {
+                                                Text("\(secret.name) 🔒")
+                                            } else {
+                                                Text(secret.name)
+                                            }
                                         }.contextMenu {
                                             if store is AnySecretStoreModifiable {
                                                 Button(action: { self.delete(secret: secret) }) {

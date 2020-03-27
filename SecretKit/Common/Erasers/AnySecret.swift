@@ -6,6 +6,7 @@ public struct AnySecret: Secret {
     fileprivate let hashable: AnyHashable
     fileprivate let _id: () -> AnyHashable
     fileprivate let _name: () -> String
+    fileprivate let _requiresAuthentication: () -> Bool
     fileprivate let _algorithm: () -> Algorithm
     fileprivate let _keySize: () -> Int
     fileprivate let _publicKey: () -> Data
@@ -16,6 +17,7 @@ public struct AnySecret: Secret {
             hashable = secret.hashable
             _id = secret._id
             _name = secret._name
+            _requiresAuthentication = secret._requiresAuthentication
             _algorithm = secret._algorithm
             _keySize = secret._keySize
             _publicKey = secret._publicKey
@@ -24,6 +26,7 @@ public struct AnySecret: Secret {
             self.hashable = secret
             _id = { secret.id as AnyHashable }
             _name = { secret.name }
+            _requiresAuthentication = { secret.requiresAuthentication }
             _algorithm = { secret.algorithm }
             _keySize = { secret.keySize }
             _publicKey = { secret.publicKey }
@@ -36,6 +39,10 @@ public struct AnySecret: Secret {
 
     public var name: String {
         _name()
+    }
+
+    public var requiresAuthentication: Bool {
+        _requiresAuthentication()
     }
 
     public var algorithm: Algorithm {

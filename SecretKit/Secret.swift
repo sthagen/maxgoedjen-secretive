@@ -1,6 +1,7 @@
 public protocol Secret: Identifiable, Hashable {
 
     var name: String { get }
+    var requiresAuthentication: Bool { get }
     var algorithm: Algorithm { get }
     var keySize: Int { get }
     var publicKey: Data { get }

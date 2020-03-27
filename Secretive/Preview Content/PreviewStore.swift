@@ -9,6 +9,7 @@ extension Preview {
 
         let id = UUID().uuidString
         let name: String
+        var requiresAuthentication = true
         let algorithm = Algorithm.ellipticCurve
         let keySize = 256
         let publicKey = UUID().uuidString.data(using: .utf8)!
