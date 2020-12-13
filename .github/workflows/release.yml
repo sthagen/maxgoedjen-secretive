@@ -6,7 +6,7 @@ on:
       - '*'
 jobs:
   test:
-    runs-on: macOS-latest
+    runs-on: macos-11.0
     timeout-minutes: 10
     steps:
     - uses: actions/checkout@v1
@@ -18,14 +18,14 @@ jobs:
         AGENT_PROFILE_DATA: ${{ secrets.AGENT_PROFILE_DATA }}
       run: ./.github/scripts/signing.sh
     - name: Set Environment
-      run: sudo xcrun xcode-select -s /Applications/Xcode_11.4.app
+      run: sudo xcrun xcode-select -s /Applications/Xcode_12.2.app
     - name: Test
       run: xcrun xcodebuild test -project Secretive.xcodeproj -scheme Secretive
   build:
-    runs-on: macOS-latest
+    runs-on: macos-11.0
     timeout-minutes: 10
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
@@ -34,7 +34,7 @@ jobs:
       with:
         tag_name: ${{ github.ref }}
         release_name: ${{ github.ref }}
-        body: "Build: https://github.com/maxgoedjen/secretive/actions/runs/${{ github.run_id }}"
+        body: "## Build\nhttps://github.com/maxgoedjen/secretive/actions/runs/${{ github.run_id }}"
         draft: true
         prerelease: false
     - name: Setup Signing
@@ -44,6 +44,8 @@ jobs:
         HOST_PROFILE_DATA: ${{ secrets.HOST_PROFILE_DATA }}
         AGENT_PROFILE_DATA: ${{ secrets.AGENT_PROFILE_DATA }}
       run: ./.github/scripts/signing.sh
+    - name: Set Environment
+      run: sudo xcrun xcode-select -s /Applications/Xcode_12.2.app
     - name: Update Build Number
       env:
         TAG_NAME: ${{ github.ref }}

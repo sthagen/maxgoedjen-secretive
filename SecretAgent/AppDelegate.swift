@@ -8,25 +8,25 @@ import Brief
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-    let storeList: SecretStoreList = {
+    private let storeList: SecretStoreList = {
         let list = SecretStoreList()
         list.add(store: SecureEnclave.Store())
         list.add(store: SmartCard.Store())
         return list
     }()
-    let updater = Updater()
-    let notifier = Notifier()
-    lazy var agent: Agent = {
+    private let updater = Updater(checkOnLaunch: false)
+    private let notifier = Notifier()
+    private lazy var agent: Agent = {
         Agent(storeList: storeList, witness: notifier)
     }()
-    lazy var socketController: SocketController = {
+    private lazy var socketController: SocketController = {
         let path = (NSHomeDirectory() as NSString).appendingPathComponent("socket.ssh") as String
         return SocketController(path: path)
     }()
     private var updateSink: AnyCancellable?
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        os_log(.debug, "SecretAgent finished launching")
+        Logger().debug("SecretAgent finished launching")
         DispatchQueue.main.async {
             self.socketController.handler = self.agent.handle(reader:writer:)
         }

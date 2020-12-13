@@ -8,16 +8,16 @@ public class SocketController {
     public var handler: ((FileHandleReader, FileHandleWriter) -> Void)?
 
     public init(path: String) {
-        os_log(.debug, "Socket controller setting up at %@", path)
+        Logger().debug("Socket controller setting up at \(path)")
         if let _ = try? FileManager.default.removeItem(atPath: path) {
-            os_log(.debug, "Socket controller removed existing socket")
+            Logger().debug("Socket controller removed existing socket")
         }
         let exists = FileManager.default.fileExists(atPath: path)
         assert(!exists)
-        os_log(.debug, "Socket controller path is clear")
+        Logger().debug("Socket controller path is clear")
         port = socketPort(at: path)
         configureSocket(at: path)
-        os_log(.debug, "Socket listening at %@", path)
+        Logger().debug("Socket listening at \(path)")
     }
 
     func configureSocket(at path: String) {
@@ -33,7 +33,7 @@ public class SocketController {
         addr.sun_family = sa_family_t(AF_UNIX)
 
         var len: Int = 0
-        _ = withUnsafeMutablePointer(to: &addr.sun_path.0) { pointer in
+        withUnsafeMutablePointer(to: &addr.sun_path.0) { pointer in
             path.withCString { cstring in
                 len = strlen(cstring)
                 strncpy(pointer, cstring, len)
@@ -42,7 +42,7 @@ public class SocketController {
         addr.sun_len = UInt8(len+2)
 
         var data: Data!
-        _ = withUnsafePointer(to: &addr) { pointer in
+        withUnsafePointer(to: &addr) { pointer in
             data = Data(bytes: pointer, count: MemoryLayout<sockaddr_un>.size)
         }
 
@@ -50,7 +50,7 @@ public class SocketController {
     }
 
     @objc func handleConnectionAccept(notification: Notification) {
-        os_log(.debug, "Socket controller accepted connection")
+        Logger().debug("Socket controller accepted connection")
         guard let new = notification.userInfo?[NSFileHandleNotificationFileHandleItem] as? FileHandle else { return }
         handler?(new, new)
         new.waitForDataInBackgroundAndNotify()
@@ -58,9 +58,9 @@ public class SocketController {
     }
 
     @objc func handleConnectionDataAvailable(notification: Notification) {
-        os_log(.debug, "Socket controller has new data available")
+        Logger().debug("Socket controller has new data available")
         guard let new = notification.object as? FileHandle else { return }
-        os_log(.debug, "Socket controller received new file handle")
+        Logger().debug("Socket controller received new file handle")
         handler?(new, new)
     }
 

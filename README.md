@@ -20,7 +20,7 @@ If your Mac has a Secure Enclave, it also has support for strong access controls
 
 ### Notifications
 
-Secretive also notifies you whenever your keys are acceessed, so you're never caught off guard.
+Secretive also notifies you whenever your keys are accessed, so you're never caught off guard.
 
 <img src="/.github/readme/notification.png" alt="Screenshot of Secretive notifying the user">
 
@@ -32,7 +32,13 @@ For Macs without Secure Enclaves, you can configure a Smart Card (such as a Yubi
 
 ### Installation
 
+#### Direct Download
+
 You can download the latest release over on the [Releases Page](https://github.com/maxgoedjen/secretive/releases)
+
+#### Using Homebrew
+
+    brew cask install secretive
 
 ### FAQ
 
