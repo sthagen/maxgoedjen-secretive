@@ -2,9 +2,10 @@ import Foundation
 import ServiceManagement
 import AppKit
 import OSLog
+import SecretKit
 
 struct LaunchAgentController {
-
+    
     func install(completion: (() -> Void)? = nil) {
         Logger().debug("Installing agent")
         _ = setEnabled(false)
@@ -22,7 +23,9 @@ struct LaunchAgentController {
         Logger().debug("Agent is not running, attempting to force launch")
         let url = Bundle.main.bundleURL.appendingPathComponent("Contents/Library/LoginItems/SecretAgent.app")
         NSWorkspace.shared.openApplication(at: url, configuration: NSWorkspace.OpenConfiguration()) { app, error in
-            completion?(error == nil)
+            DispatchQueue.main.async {
+                completion?(error == nil)
+            }
             if let error = error {
                 Logger().error("Error force launching \(error.localizedDescription)")
             } else {
@@ -32,7 +35,7 @@ struct LaunchAgentController {
     }
 
     private func setEnabled(_ enabled: Bool) -> Bool {
-        SMLoginItemSetEnabled("com.maxgoedjen.Secretive.SecretAgent" as CFString, enabled)
+        SMLoginItemSetEnabled(Bundle.main.agentBundleID as CFString, enabled)
     }
 
 }

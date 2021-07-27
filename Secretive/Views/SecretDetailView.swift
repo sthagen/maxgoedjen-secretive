@@ -10,7 +10,10 @@ struct SecretDetailView<SecretType: Secret>: View {
     var body: some View {
         Form {
             Section {
-                CopyableView(title: "Fingerprint", image: Image(systemName: "touchid"), text: keyWriter.openSSHFingerprint(secret: secret))
+                CopyableView(title: "SHA256 Fingerprint", image: Image(systemName: "touchid"), text: keyWriter.openSSHSHA256Fingerprint(secret: secret))
+                Spacer()
+                    .frame(height: 20)
+                CopyableView(title: "MD5 Fingerprint", image: Image(systemName: "touchid"), text: keyWriter.openSSHMD5Fingerprint(secret: secret))
                 Spacer()
                     .frame(height: 20)
                 CopyableView(title: "Public Key", image: Image(systemName: "key"), text: keyString)
@@ -22,9 +25,9 @@ struct SecretDetailView<SecretType: Secret>: View {
     }
 
     var dashedKeyName: String {
-        secret.name.replacingOccurrences(of: " ", with: "-")
+             secret.name.replacingOccurrences(of: " ", with: "-")
     }
-
+    
     var dashedHostName: String {
         ["secretive", Host.current().localizedName, "local"]
             .compactMap { $0 }
