@@ -38,7 +38,11 @@ Awesome! Just bear in mind that because an app only has access to the keychain i
 
 ### What's this network request to GitHub?
 
-Secretive checks in with GitHub's releases API to check if there's a new version of Secretive available. You can audit the source code for this feature [here](https://github.com/maxgoedjen/secretive/blob/main/Brief/Updater.swift).
+Secretive checks in with GitHub's releases API to check if there's a new version of Secretive available. You can audit the source code for this feature [here](https://github.com/maxgoedjen/secretive/blob/main/Sources/Packages/Sources/Brief/Updater.swift).
+
+### How do I uninstall Secretive?
+
+Drag Secretive.app to the trash and remove `~/Library/Containers/com.maxgoedjen.Secretive.SecretAgent`. `SecretAgent` may continue running until you quit it or reboot.
 
 ### I have a security issue
 
