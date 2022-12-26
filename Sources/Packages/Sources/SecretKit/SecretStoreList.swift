@@ -8,7 +8,7 @@ public class SecretStoreList: ObservableObject {
     @Published public var stores: [AnySecretStore] = []
     /// A modifiable store, if one is available.
     @Published public var modifiableStore: AnySecretStoreModifiable?
-    private var sinks: [AnyCancellable] = []
+    private var cancellables: Set<AnyCancellable> = []
 
     /// Initializes a SecretStoreList.
     public init() {
@@ -31,16 +31,19 @@ public class SecretStoreList: ObservableObject {
         stores.reduce(false, { $0 || $1.isAvailable })
     }
 
+    public var allSecrets: [AnySecret] {
+        stores.flatMap(\.secrets)
+    }
+
 }
 
 extension SecretStoreList {
 
     private func addInternal(store: AnySecretStore) {
         stores.append(store)
-        let sink = store.objectWillChange.sink {
+        store.objectWillChange.sink {
             self.objectWillChange.send()
-        }
-        sinks.append(sink)
+        }.store(in: &cancellables)
     }
 
 }
