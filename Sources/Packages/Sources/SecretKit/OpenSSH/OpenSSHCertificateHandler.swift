@@ -2,10 +2,10 @@ import Foundation
 import OSLog
 
 /// Manages storage and lookup for OpenSSH certificates.
-public class OpenSSHCertificateHandler {
+public final class OpenSSHCertificateHandler {
 
     private let publicKeyFileStoreController = PublicKeyFileStoreController(homeDirectory: NSHomeDirectory())
-    private let logger = Logger()
+    private let logger = Logger(subsystem: "com.maxgoedjen.secretive.secretagent", category: "OpenSSHCertificateHandler")
     private let writer = OpenSSHKeyWriter()
     private var keyBlobsAndNames: [AnySecret: (Data, Data)] = [:]
 
