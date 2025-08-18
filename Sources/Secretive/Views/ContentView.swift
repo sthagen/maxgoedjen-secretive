@@ -4,18 +4,18 @@ import SecureEnclaveSecretKit
 import SmartCardSecretKit
 import Brief
 
-struct ContentView<UpdaterType: UpdaterProtocol, AgentStatusCheckerType: AgentStatusCheckerProtocol>: View {
+struct ContentView: View {
 
     @Binding var showingCreation: Bool
     @Binding var runningSetup: Bool
     @Binding var hasRunSetup: Bool
     @State var showingAgentInfo = false
-    @State var activeSecret: AnySecret.ID?
+    @State var activeSecret: AnySecret?
     @Environment(\.colorScheme) var colorScheme
 
-    @EnvironmentObject private var storeList: SecretStoreList
-    @EnvironmentObject private var updater: UpdaterType
-    @EnvironmentObject private var agentStatusChecker: AgentStatusCheckerType
+    @Environment(\.secretStoreList) private var storeList
+    @Environment(\.updater) private var updater: any UpdaterProtocol
+    @Environment(\.agentStatusChecker) private var agentStatusChecker: any AgentStatusCheckerProtocol
 
     @State private var selectedUpdate: Release?
     @State private var showingAppPathNotice = false
@@ -30,7 +30,7 @@ struct ContentView<UpdaterType: UpdaterProtocol, AgentStatusCheckerType: AgentSt
         }
         .frame(minWidth: 640, minHeight: 320)
         .toolbar {
-            toolbarItem(updateNoticeView, id: "update")
+//            toolbarItem(updateNoticeView, id: "update")
             toolbarItem(runningOrRunSetupView, id: "setup")
             toolbarItem(appPathNoticeView, id: "appPath")
             toolbarItem(newItemView, id: "new")
@@ -45,10 +45,16 @@ struct ContentView<UpdaterType: UpdaterProtocol, AgentStatusCheckerType: AgentSt
 extension ContentView {
 
 
-    func toolbarItem(_ view: some View, id: String) -> ToolbarItem<String, some View> {
-        ToolbarItem(id: id) { view }
+    @ToolbarContentBuilder
+    func toolbarItem(_ view: some View, id: String) -> some ToolbarContent {
+        if #available(macOS 26.0, *) {
+            ToolbarItem(id: id) { view }
+                .sharedBackgroundVisibility(.hidden)
+        } else {
+            ToolbarItem(id: id) { view }
+        }
     }
-
+    
     var needsSetup: Bool {
         (runningSetup || !hasRunSetup || !agentStatusChecker.running) && !agentStatusChecker.developmentBuild
     }
@@ -64,15 +70,15 @@ extension ContentView {
         }
     }
 
-    var updateNoticeContent: (LocalizedStringKey, Color)? {
+    var updateNoticeContent: (LocalizedStringResource, Color)? {
         guard let update = updater.update else { return nil }
         if update.critical {
-            return ("update_critical_notice_title", .red)
+            return (.updateCriticalNoticeTitle, .red)
         } else {
             if updater.testBuild {
-                return ("update_test_notice_title", .blue)
+                return (.updateTestNoticeTitle, .blue)
             } else {
-                return ("update_normal_notice_title", .orange)
+                return (.updateNormalNoticeTitle, .orange)
             }
         }
     }
@@ -106,7 +112,7 @@ extension ContentView {
                 if let modifiable = storeList.modifiableStore {
                     CreateSecretView(store: modifiable, showing: $showingCreation)
                         .onDisappear {
-                            guard let newest = modifiable.secrets.last?.id else { return }
+                            guard let newest = modifiable.secrets.last else { return }
                             activeSecret = newest
                         }
                 }
@@ -121,13 +127,13 @@ extension ContentView {
         }, label: {
             Group {
                 if hasRunSetup && !agentStatusChecker.running {
-                    Text("agent_not_running_notice_title")
+                    Text(.agentNotRunningNoticeTitle)
                 } else {
-                    Text("agent_setup_notice_title")
+                    Text(.agentSetupNoticeTitle)
                 }
             }
             .font(.headline)
-            .foregroundColor(.white)
+
         })
         .buttonStyle(ToolbarButtonStyle(color: .orange))
     }
@@ -138,7 +144,7 @@ extension ContentView {
             showingAgentInfo = true
         }, label: {
             HStack {
-                Text("agent_running_notice_title")
+                Text(.agentRunningNoticeTitle)
                     .font(.headline)
                     .foregroundColor(colorScheme == .light ? Color(white: 0.3) : .white)
                 Circle()
@@ -149,10 +155,10 @@ extension ContentView {
         .buttonStyle(ToolbarButtonStyle(lightColor: .black.opacity(0.05), darkColor: .white.opacity(0.05)))
         .popover(isPresented: $showingAgentInfo, attachmentAnchor: attachmentAnchor, arrowEdge: .bottom) {
             VStack {
-                Text("agent_running_notice_detail_title")
+                Text(.agentRunningNoticeDetailTitle)
                     .font(.title)
                     .padding(5)
-                Text("agent_running_notice_detail_description")
+                Text(.agentRunningNoticeDetailDescription)
                     .frame(width: 300)
             }
             .padding()
@@ -166,7 +172,7 @@ extension ContentView {
                 showingAppPathNotice = true
             }, label: {
                 Group {
-                    Text("app_not_in_applications_notice_title")
+                    Text(.appNotInApplicationsNoticeTitle)
                 }
                 .font(.headline)
                 .foregroundColor(.white)
@@ -178,7 +184,7 @@ extension ContentView {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 64)
-                    Text("app_not_in_applications_notice_detail_description")
+                    Text(.appNotInApplicationsNoticeDetailDescription)
                         .frame(maxWidth: 300)
                 }
                 .padding()
@@ -197,34 +203,18 @@ extension ContentView {
 
 struct ContentView_Previews: PreviewProvider {
 
-    private static let storeList: SecretStoreList = {
-        let list = SecretStoreList()
-        list.add(store: SecureEnclave.Store())
-        list.add(store: SmartCard.Store())
-        return list
-    }()
-    private static let agentStatusChecker = AgentStatusChecker()
-    private static let justUpdatedChecker = JustUpdatedChecker()
-
-    @State var hasRunSetup = false
-    @State private var showingSetup = false
-    @State private var showingCreation = false
-
     static var previews: some View {
         Group {
             // Empty on modifiable and nonmodifiable
-            ContentView<PreviewUpdater, AgentStatusChecker>(showingCreation: .constant(false), runningSetup: .constant(false), hasRunSetup: .constant(true))
-                .environmentObject(Preview.storeList(stores: [Preview.Store(numberOfRandomSecrets: 0)], modifiableStores: [Preview.StoreModifiable(numberOfRandomSecrets: 0)]))
-                .environmentObject(PreviewUpdater())
-                .environmentObject(agentStatusChecker)
+            ContentView(showingCreation: .constant(false), runningSetup: .constant(false), hasRunSetup: .constant(true))
+                .environment(Preview.storeList(stores: [Preview.Store(numberOfRandomSecrets: 0)], modifiableStores: [Preview.StoreModifiable(numberOfRandomSecrets: 0)]))
+                .environment(PreviewUpdater())
 
             // 5 items on modifiable and nonmodifiable
-            ContentView<PreviewUpdater, AgentStatusChecker>(showingCreation: .constant(false), runningSetup: .constant(false), hasRunSetup: .constant(true))
-                .environmentObject(Preview.storeList(stores: [Preview.Store()], modifiableStores: [Preview.StoreModifiable()]))
-                .environmentObject(PreviewUpdater())
-                .environmentObject(agentStatusChecker)
+            ContentView(showingCreation: .constant(false), runningSetup: .constant(false), hasRunSetup: .constant(true))
+                .environment(Preview.storeList(stores: [Preview.Store()], modifiableStores: [Preview.StoreModifiable()]))
+                .environment(PreviewUpdater())
         }
-        .environmentObject(agentStatusChecker)
 
     }
 }

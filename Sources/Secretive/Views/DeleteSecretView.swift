@@ -3,7 +3,7 @@ import SecretKit
 
 struct DeleteSecretView<StoreType: SecretStoreModifiable>: View {
 
-    @ObservedObject var store: StoreType
+    @State var store: StoreType
     let secret: StoreType.SecretType
     var dismissalBlock: (Bool) -> ()
 
@@ -18,24 +18,24 @@ struct DeleteSecretView<StoreType: SecretStoreModifiable>: View {
                     .padding()
                 VStack {
                     HStack {
-                        Text("delete_confirmation_title_\(secret.name)").bold()
+                        Text(.deleteConfirmationTitle(secretName: secret.name)).bold()
                         Spacer()
                     }
                     HStack {
-                        Text("delete_confirmation_description_\(secret.name)_\(secret.name)")
+                        Text(.deleteConfirmationDescription(secretName: secret.name, confirmSecretName: secret.name))
                         Spacer()
                     }
                     HStack {
-                        Text("delete_confirmation_confirm_name_label")
+                        Text(.deleteConfirmationConfirmNameLabel)
                         TextField(secret.name, text: $confirm)
                     }
                 }
             }
             HStack {
                 Spacer()
-                Button("delete_confirmation_delete_button", action: delete)
+                Button(.deleteConfirmationDeleteButton, action: delete)
                     .disabled(confirm != secret.name)
-                Button("delete_confirmation_cancel_button") {
+                Button(.deleteConfirmationCancelButton) {
                     dismissalBlock(false)
                 }
                 .keyboardShortcut(.cancelAction)
@@ -49,8 +49,10 @@ struct DeleteSecretView<StoreType: SecretStoreModifiable>: View {
     }
     
     func delete() {
-        try! store.delete(secret: secret)
-        dismissalBlock(true)
+        Task {
+            try! await store.delete(secret: secret)
+            dismissalBlock(true)
+        }
     }
 
 }

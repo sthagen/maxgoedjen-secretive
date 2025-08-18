@@ -3,38 +3,24 @@ import SecretKit
 
 struct EmptyStoreView: View {
 
-    @ObservedObject var store: AnySecretStore
-    @Binding var activeSecret: AnySecret.ID?
-
+    @State var store: AnySecretStore?
+    
     var body: some View {
         if store is AnySecretStoreModifiable {
-            NavigationLink(destination: EmptyStoreModifiableView(), tag: Constants.emptyStoreModifiableTag, selection: $activeSecret) {
-                Text("empty_store_modifiable_title")
-            }
+            EmptyStoreModifiableView()
         } else {
-            NavigationLink(destination: EmptyStoreImmutableView(), tag: Constants.emptyStoreTag, selection: $activeSecret) {
-                Text("empty_store_nonmodifiable_title")
-            }
+            EmptyStoreImmutableView()
         }
     }
-}
-
-extension EmptyStoreView {
-    
-    enum Constants {
-        static let emptyStoreModifiableTag: AnyHashable = "emptyStoreModifiableTag"
-        static let emptyStoreTag: AnyHashable = "emptyStoreTag"
-    }
-
 }
 
 struct EmptyStoreImmutableView: View {
     
     var body: some View {
         VStack {
-            Text("empty_store_nonmodifiable_title").bold()
-            Text("empty_store_nonmodifiable_description")
-            Text("empty_store_nonmodifiable_supported_key_types")
+            Text(.emptyStoreNonmodifiableTitle).bold()
+            Text(.emptyStoreNonmodifiableDescription)
+            Text(.emptyStoreNonmodifiableSupportedKeyTypes)
         }.frame(maxWidth: .infinity, maxHeight: .infinity)
     }
     
@@ -63,8 +49,8 @@ struct EmptyStoreModifiableView: View {
                         path.addLine(to: CGPoint(x: g.size.width - 3, y: 0))
                     }.fill()
                 }.frame(height: (windowGeometry.size.height/2) - 20).padding()
-                Text("empty_store_modifiable_click_here_title").bold()
-                Text("empty_store_modifiable_click_here_description")
+                Text(.emptyStoreModifiableClickHereTitle).bold()
+                Text(.emptyStoreModifiableClickHereDescription)
                 Spacer()
             }.frame(maxWidth: .infinity, maxHeight: .infinity)
         }
