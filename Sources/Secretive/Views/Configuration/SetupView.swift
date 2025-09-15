@@ -85,7 +85,10 @@ struct SetupView: View {
             integrations = true
         }, content: {
             IntegrationsView()
+                .frame(minWidth: 500, minHeight: 400)
         })
+        .frame(idealWidth: 600)
+        .fixedSize(horizontal: false, vertical: true)
     }
 }
 
