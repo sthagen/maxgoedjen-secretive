@@ -20,11 +20,17 @@ let package = Package(
             name: "SmartCardSecretKit",
             targets: ["SmartCardSecretKit"]),
         .library(
+            name: "CertificateKit",
+            targets: ["CertificateKit"]),
+        .library(
             name: "SecretAgentKit",
             targets: ["SecretAgentKit"]),
         .library(
             name: "Common",
             targets: ["Common"]),
+        .library(
+            name: "SharedXPCServices",
+            targets: ["SharedXPCServices"]),
         .library(
             name: "Brief",
             targets: ["Brief"]),
@@ -62,8 +68,14 @@ let package = Package(
             swiftSettings: swiftSettings,
         ),
         .target(
+            name: "CertificateKit",
+            dependencies: ["SecretKit", "SSHProtocolKit"],
+            resources: [localization],
+            swiftSettings: swiftSettings,
+        ),
+        .target(
             name: "SecretAgentKit",
-            dependencies: ["SecretKit", "SSHProtocolKit", "Common"],
+            dependencies: ["SecretKit", "SSHProtocolKit", "CertificateKit", "Common"],
             resources: [localization],
             swiftSettings: swiftSettings,
         ),
@@ -85,6 +97,12 @@ let package = Package(
         .target(
             name: "Common",
             dependencies: ["SSHProtocolKit", "SecretKit"],
+            resources: [localization],
+            swiftSettings: swiftSettings,
+        ),
+        .target(
+            name: "SharedXPCServices",
+            dependencies: ["CertificateKit"],
             resources: [localization],
             swiftSettings: swiftSettings,
         ),

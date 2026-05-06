@@ -6,8 +6,21 @@ import SmartCardSecretKit
 import SecretAgentKit
 import Brief
 import Observation
+import SSHProtocolKit
+import CertificateKit
 import Common
+import SwiftUI
 
+extension EnvironmentValues {
+
+    @MainActor fileprivate static let _certificateStore: CertificateStore = CertificateStore()
+
+    @MainActor var certificateStore: CertificateStore {
+        EnvironmentValues._certificateStore
+    }
+
+
+}
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
 
@@ -18,13 +31,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         try? migrator.migrate(to: cryptoKit)
         list.add(store: cryptoKit)
         list.add(store: SmartCard.Store())
+        let certsMigrator = CertificateMigrator(homeDirectory: URL.homeDirectory, certificateStore: EnvironmentValues._certificateStore)
+        try? certsMigrator.migrate()
         return list
     }()
     private let updater = Updater(checkOnLaunch: true)
     private let notifier = Notifier()
-    private let publicKeyFileStoreController = PublicKeyFileStoreController(directory: URL.publicKeyDirectory)
-    private lazy var agent: Agent = {
-        Agent(storeList: storeList, witness: notifier)
+    private let publicKeyFileStoreController = PublicKeyFileStoreController(publicKeysURL: URL.publicKeyDirectory, certificatesURL: URL.certificatesDirectory)
+    @MainActor private lazy var agent: Agent = {
+        Agent(storeList: storeList, certificateStore: EnvironmentValues._certificateStore, witness: notifier)
     }()
     private lazy var socketController: SocketController = {
         let path = URL.socketPath as String
@@ -55,7 +70,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 try? publicKeyFileStoreController.generatePublicKeys(for: storeList.allSecrets, clear: true)
             }
         }
+        Task {
+            for await _ in NotificationCenter.default.notifications(named: .certificateStoreReloaded) {
+                try? publicKeyFileStoreController.generateCertificates(for: EnvironmentValues._certificateStore.certificates, clear: true)
+            }
+        }
         try? publicKeyFileStoreController.generatePublicKeys(for: storeList.allSecrets, clear: true)
+        try? publicKeyFileStoreController.generateCertificates(for: EnvironmentValues._certificateStore.certificates, clear: true)
         notifier.prompt()
         _ = withObservationTracking {
             updater.update
