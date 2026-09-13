@@ -490,8 +490,8 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
-            "value" : "Build Log"
+            "state" : "translated",
+            "value" : "Log de Build"
           }
         },
         "ro" : {
@@ -675,8 +675,8 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
-            "value" : "About Secretive"
+            "state" : "translated",
+            "value" : "Sobre o Secretive"
           }
         },
         "ro" : {
@@ -860,8 +860,8 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
-            "value" : "Secretive is Open Source and MIT Licensed"
+            "state" : "translated",
+            "value" : "O Secretive é Open Source e distribuído sob a licença MIT"
           }
         },
         "ro" : {
@@ -1045,8 +1045,8 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
-            "value" : "Special thanks our [Contributors](%1$(contributorsLink)@) and [Sponsors](%2$(sponsorsLink)@)"
+            "state" : "translated",
+            "value" : "Agradecimentos especiais aos nossos [Contribuidores](%1$(contributorsLink)@) e [Patrocinadores](%2$(sponsorsLink)@)"
           }
         },
         "ro" : {
@@ -1230,8 +1230,8 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
-            "value" : "View on GitHub"
+            "state" : "translated",
+            "value" : "Ver no GitHub"
           }
         },
         "ro" : {
@@ -1416,7 +1416,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Secretive não foi capaz de obter o SecretAgent para iniciar. Por favor tente reiniciar seu Mac e se isso não resolver, registre um problema em nosso GitHub."
+            "value" : "O Secretive não foi capaz de iniciar o SecretAgent. Por favor, tente reiniciar seu Mac e, se isso não resolver, registre uma issue no GitHub."
           }
         },
         "ro" : {
@@ -1601,7 +1601,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Desabilitar o Agente"
+            "value" : "Desativar o Agente"
           }
         },
         "ro" : {
@@ -2156,7 +2156,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Caminho do Socket"
+            "value" : "Caminho do socket"
           }
         },
         "ro" : {
@@ -2526,7 +2526,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Agente iniciando"
+            "value" : "Iniciando Agente"
           }
         },
         "ro" : {
@@ -2896,7 +2896,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "SecretAgent é um processo que é executado em segundo plano para assinar pedidos, então não há necessidade de manter Secretive aberto o tempo todo.\n\n**Secretive não funcionará corretamente a menos que o agente esteja instalado e executando.**"
+            "value" : "O SecretAgent é um processo que roda em segundo plano para assinar pedidos, sem precisar manter o Secretive aberto o tempo todo.\n\n**O Secretive não funcionará corretamente a menos que o agente esteja instalado e rodando.**"
           }
         },
         "ro" : {
@@ -3081,7 +3081,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Agent não está rodando"
+            "value" : "O Agente não está rodando"
           }
         },
         "ro" : {
@@ -3266,7 +3266,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "SecretAgent é um processo que roda em background para assinar requisições para que você não precise manter o Secretive aberto a todo momento.\n\n**Você pode fechar o Secretive e tudo continuará funcionando.**"
+            "value" : "O SecretAgent é um processo que roda em segundo plano para assinar pedidos, sem precisar manter o Secretive aberto o tempo todo.\n\n**Você pode fechar o Secretive e tudo continuará funcionando.**"
           }
         },
         "ro" : {
@@ -3451,7 +3451,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Secret Agent está rodando"
+            "value" : "O SecretAgent está rodando"
           }
         },
         "ro" : {
@@ -3636,7 +3636,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Agent está rodando"
+            "value" : "O Agente está rodando"
           }
         },
         "ro" : {
@@ -4375,8 +4375,8 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
-            "value" : "Later"
+            "state" : "translated",
+            "value" : "Depois"
           }
         },
         "ro" : {
@@ -4561,7 +4561,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Secretive necessita estar no seu diretório de Aplicações para funcionar corretamente. Por favor mova-o e abra novamente."
+            "value" : "O Secretive precisa estar no seu diretório de Aplicativos para funcionar corretamente. Por favor, mova-o e abra novamente."
           }
         },
         "ro" : {
@@ -4745,8 +4745,8 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
-            "value" : "Quit"
+            "state" : "translated",
+            "value" : "Encerrar"
           }
         },
         "ro" : {
@@ -4931,7 +4931,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Secretive não está no diretório de Aplicações"
+            "value" : "O Secretive não está no diretório de Aplicativos"
           }
         },
         "ro" : {
@@ -5117,7 +5117,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "destravar segredo “%1$(secretName)@” for %2$(duration)@"
+            "value" : "destrancar o segredo “%1$(secretName)@” por %2$(duration)@"
           }
         },
         "ro" : {
@@ -5489,7 +5489,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "assinar requisição a partir do “%1$(appName)@” utilizando o segredo “%2$(secretName)@”"
+            "value" : "assinar um pedido de “%1$(appName)@” usando o segredo “%2$(secretName)@”"
           }
         },
         "ro" : {
@@ -5548,6 +5548,378 @@
         }
       }
     },
+    "auth_context_request_signature_for_connection_description" : {
+      "comment" : "When the user performs a signature action using a secret, they are shown a prompt to approve the action. This is the description, showing which secret will be used, and where the request is coming from. The first placeholder is the name of the app requesting the operation. The second placeholder is the name of the secret.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "af" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "sign a request from “%1$(appName)@” using secret “%2$(targetName)@”"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "sign a request from “%1$(appName)@” using secret “%2$(targetName)@”"
+          }
+        },
+        "ca" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "signa una petición de “%1$(appName)@” usant el secret “%2$(targetName)@”"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "sign a request from “%1$(appName)@” using secret “%2$(targetName)@”"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "sign a request from “%1$(appName)@” using secret “%2$(targetName)@”"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "eine Anfrage von “%1$(appName)@” mit dem Secret “%2$(targetName)@” signieren"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "sign a request from “%1$(appName)@” using secret “%2$(targetName)@”"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "sign a request from “%1$(appName)@”  to connect to “%2$(targetName)@” using secret “%3$(secretName)@”"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "sign a request from “%1$(appName)@” using secret “%2$(targetName)@”"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "allekirjoita pyyntö lähteestä “%1$(appName)@” käyttäen salaisuutta “%2$(targetName)@”"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "signer une requête de “%1$(appName)@” en utilisant le secret “%2$(targetName)@”"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "sign a request from “%1$(appName)@” using secret “%2$(targetName)@”"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "sign a request from “%1$(appName)@” using secret “%2$(targetName)@”"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "firma la richiesta di “%1$(appName)@” usando il Segreto “%2$(targetName)@”"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "シークレット“%2$(targetName)@”を使って“%1$(appName)@”の要求に署名します"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "비밀 “%2$(targetName)@”를 사용해서 “%1$(appName)@”의 요청에 서명"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "sign a request from “%1$(appName)@” using secret “%2$(targetName)@”"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "sign a request from “%1$(appName)@” using secret “%2$(targetName)@”"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "podpisz zapytanie od “%1$(appName)@” za pomocą sekretu “%2$(targetName)@”"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "sign a request from “%1$(appName)@” using secret “%2$(targetName)@”"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "assinar requisição a partir do “%1$(appName)@” utilizando o segredo “%2$(targetName)@”"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "sign a request from “%1$(appName)@” using secret “%2$(targetName)@”"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "подписать запрос от “%1$(appName)@” используя секрет “%2$(targetName)@”"
+          }
+        },
+        "sr" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "sign a request from “%1$(appName)@” using secret “%2$(targetName)@”"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "sign a request from “%1$(appName)@” using secret “%2$(targetName)@”"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "sign a request from “%1$(appName)@” using secret “%2$(targetName)@”"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "sign a request from “%1$(appName)@” using secret “%2$(targetName)@”"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "sign a request from “%1$(appName)@” using secret “%2$(targetName)@”"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "用密钥串“%2$(targetName)@”认证来自“%1$(appName)@”的请求"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "用Secret「%2$(targetName)@」認證来自「%1$(appName)@」的请求"
+          }
+        }
+      }
+    },
+    "auth_context_request_signature_for_signature_description" : {
+      "comment" : "When the user performs a signature action using a secret, they are shown a prompt to approve the action. This is the description, showing which secret will be used, and where the request is coming from. The first placeholder is the name of the app requesting the operation. The second placeholder is the name of the secret.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "af" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "sign a request from “%1$(namespace)@” using secret “%2$(appName)@”"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "sign a request from “%1$(namespace)@” using secret “%2$(appName)@”"
+          }
+        },
+        "ca" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "signa una petición de “%1$(namespace)@” usant el secret “%2$(appName)@”"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "sign a request from “%1$(namespace)@” using secret “%2$(appName)@”"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "sign a request from “%1$(namespace)@” using secret “%2$(appName)@”"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "eine Anfrage von “%1$(namespace)@” mit dem Secret “%2$(appName)@” signieren"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "sign a request from “%1$(namespace)@” using secret “%2$(appName)@”"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "sign a %1$(namespace)@“ request from “%2$(appName)@” using secret “%3$(secretName)@”"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "sign a request from “%1$(namespace)@” using secret “%2$(appName)@”"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "allekirjoita pyyntö lähteestä “%1$(namespace)@” käyttäen salaisuutta “%2$(appName)@”"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "signer une requête de “%1$(namespace)@” en utilisant le secret “%2$(appName)@”"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "sign a request from “%1$(namespace)@” using secret “%2$(appName)@”"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "sign a request from “%1$(namespace)@” using secret “%2$(appName)@”"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "firma la richiesta di “%1$(namespace)@” usando il Segreto “%2$(appName)@”"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "シークレット“%2$(appName)@”を使って“%1$(namespace)@”の要求に署名します"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "비밀 “%2$(appName)@”를 사용해서 “%1$(namespace)@”의 요청에 서명"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "sign a request from “%1$(namespace)@” using secret “%2$(appName)@”"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "sign a request from “%1$(namespace)@” using secret “%2$(appName)@”"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "podpisz zapytanie od “%1$(namespace)@” za pomocą sekretu “%2$(appName)@”"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "sign a request from “%1$(namespace)@” using secret “%2$(appName)@”"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "assinar requisição a partir do “%1$(namespace)@” utilizando o segredo “%2$(appName)@”"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "sign a request from “%1$(namespace)@” using secret “%2$(appName)@”"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "подписать запрос от “%1$(namespace)@” используя секрет “%2$(appName)@”"
+          }
+        },
+        "sr" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "sign a request from “%1$(namespace)@” using secret “%2$(appName)@”"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "sign a request from “%1$(namespace)@” using secret “%2$(appName)@”"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "sign a request from “%1$(namespace)@” using secret “%2$(appName)@”"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "sign a request from “%1$(namespace)@” using secret “%2$(appName)@”"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "sign a request from “%1$(namespace)@” using secret “%2$(appName)@”"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "用密钥串“%2$(appName)@”认证来自“%1$(namespace)@”的请求"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "用Secret「%2$(appName)@」認證来自「%1$(namespace)@」的请求"
+          }
+        }
+      }
+    },
     "certificate_detail_critical_options_label" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -5555,6 +5927,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Critical Options"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Opções críticas"
           }
         }
       }
@@ -5567,6 +5945,12 @@
             "state" : "translated",
             "value" : "Extensions"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Extensões"
+          }
         }
       }
     },
@@ -5577,6 +5961,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Key ID"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ID da Chave"
           }
         }
       }
@@ -5589,6 +5979,12 @@
             "state" : "translated",
             "value" : "Certificate Path"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Caminho do Certificado"
+          }
         }
       }
     },
@@ -5599,6 +5995,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Principals"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entidades Principais"
           }
         }
       }
@@ -5611,6 +6013,12 @@
             "state" : "translated",
             "value" : "Serial Number"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Número de Série"
+          }
         }
       }
     },
@@ -5621,6 +6029,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Public Key Fingerprint"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impressão Digital da Chave Pública"
           }
         }
       }
@@ -5633,6 +6047,12 @@
             "state" : "translated",
             "value" : "Signing CA Fingerprint"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impressão Digital da AC de Assinatura"
+          }
         }
       }
     },
@@ -5643,6 +6063,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Valid After"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Válido após"
           }
         }
       }
@@ -5655,6 +6081,12 @@
             "state" : "translated",
             "value" : "Valid Until"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Válido até"
+          }
         }
       }
     },
@@ -5665,6 +6097,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Validity Range"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Intervalo de validade"
           }
         }
       }
@@ -5798,7 +6236,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Clique para Copiar"
+            "value" : "Clique para copiar"
           }
         },
         "ro" : {
@@ -6353,7 +6791,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Se você mudar suas configurações de biometria de _qualquer forma_, incluindo adicionar uma nova impressão digital, esta chave não estará mais acessível."
+            "value" : "Se você mudar suas configurações de biometria de _qualquer forma_, incluindo adicionar uma nova impressão digital, esta chave não será mais acessível."
           }
         },
         "ro" : {
@@ -6908,7 +7346,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Isto é exibido ao final da sua chave pública. É geralmente um endereço de email."
+            "value" : "Isso é exibido ao final da sua chave pública. É geralmente um endereço de email."
           }
         },
         "ro" : {
@@ -7462,8 +7900,8 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
-            "value" : "Unavailable on this version of macOS"
+            "state" : "translated",
+            "value" : "Indisponível nessa versão do macOS"
           }
         },
         "ro" : {
@@ -7648,7 +8086,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Aviso: Chaves ML-DSA são muito novas e não são suportadas por muitos servidores ainda. Por favor, verifique se o servidor que você estará utilizando esta chave aceita chaves ML-DSA."
+            "value" : "Aviso: Chaves ML-DSA são muito novas e ainda não suportadas por vários servidores. Por favor, verifique se o servidor em que você usará essa chave aceita chaves ML-DSA."
           }
         },
         "ro" : {
@@ -8203,7 +8641,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Autenticação não é requerida enquanto seu Mac estiver destravado, mas você será notificado quando um segredo for utilizado."
+            "value" : "Nenhuma autenticação é solicitada enquanto seu Mac estiver desbloqueado, mas você será notificado quando um segredo for usado."
           }
         },
         "ro" : {
@@ -9128,7 +9566,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Você será requerido a autenticar utilizando Touch ID, Apple Watch ou senha antes de cada uso."
+            "value" : "Você será solicitado a autenticar usando Touch ID, Apple Watch ou senha a cada uso."
           }
         },
         "ro" : {
@@ -9313,7 +9751,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Requer Autenticação"
+            "value" : "Requer autenticação"
           }
         },
         "ro" : {
@@ -9498,7 +9936,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Criar um Novo Segredo"
+            "value" : "Criar um novo Segredo"
           }
         },
         "ro" : {
@@ -9683,7 +10121,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Não Apagar"
+            "value" : "Não apagar"
           }
         },
         "ro" : {
@@ -10053,7 +10491,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Se você deletar %1$(secretName)@, você não será permitido recuperá-lo. Digite “%2$(confirmSecretName)@” para confirmar."
+            "value" : "Se você apagar %1$(secretName)@, não poderá recuperá-lo. Digite “%2$(confirmSecretName)@” para confirmar."
           }
         },
         "ro" : {
@@ -10238,7 +10676,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Deletar %1$(name)@?"
+            "value" : "Apagar %1$(name)@?"
           }
         },
         "ro" : {
@@ -10608,7 +11046,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Renomear"
+            "value" : "Salvar"
           }
         },
         "ro" : {
@@ -10793,7 +11231,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Criar um novo clicando aqui."
+            "value" : "Crie um novo clicando aqui."
           }
         },
         "ro" : {
@@ -11163,7 +11601,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Parece que você pode ter atualizado recentemente o macOS. Às vezes, isto coloca o Secure Enclave em um estado estranho, e talvez você precise reiniciar seu Mac antes que as coisas comecem a funcionar novamente."
+            "value" : "Parece que você pode ter atualizado o macOS recentemente. Às vezes, isso coloca o Secure Enclave em um estado estranho, e talvez você precise reiniciar seu Mac antes que as coisas comecem a funcionar novamente."
           }
         },
         "ro" : {
@@ -11348,7 +11786,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Credenciais faltando?"
+            "value" : "Segredos faltando?"
           }
         },
         "ro" : {
@@ -11533,7 +11971,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Utilize sua ferramenta de gestão de Smart Card para criar um segredo."
+            "value" : "Use a ferramenta de gestão do seu Smart Card para criar um segredo."
           }
         },
         "ro" : {
@@ -11718,7 +12156,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Secretive suporta chaves EC256, EC384, RSA1024 e RSA2048."
+            "value" : "O Secretive suporta chaves EC256, EC384 e RSA2048."
           }
         },
         "ro" : {
@@ -12816,7 +13254,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Há uma lista de instruções para aplicativos no GitHub, mantida pela comunidade. Se o aplicativo que você está procurando não é suportado, registre um ticket para que a comunidade possa ajudar."
+            "value" : "Há uma lista de instruções para aplicativos no GitHub, mantida pela comunidade. Se o aplicativo que você está procurando não é suportado, registre uma issue e a comunidade deve conseguir ajudar."
           }
         },
         "ro" : {
@@ -13001,7 +13439,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Há uma lista de instruções para aplicativos no GitHub, mantida pela comunidade. Se o aplicativo que você está procurando não é suportado, registre um ticket para que a comunidade possa ajudar."
+            "value" : "Há uma lista de instruções para shells no GitHub, mantida pela comunidade. Se o shell que você está procurando não é suportado, registre uma issue e a comunidade deve conseguir ajudar."
           }
         },
         "ro" : {
@@ -13069,6 +13507,12 @@
             "state" : "translated",
             "value" : "your_email@example.com"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "seu_email@exemplo.com.br"
+          }
         }
       }
     },
@@ -13080,6 +13524,12 @@
             "state" : "translated",
             "value" : "The email address you set when you configured git (visible in gitconfig)."
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O endereço de email que você definiu quando configurou o git (visível no gitconfig)."
+          }
         }
       }
     },
@@ -13090,6 +13540,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Email Address"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Endereço de email"
           }
         }
       }
@@ -13220,7 +13676,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Você precisará criar uma Credencial antes de configurar esta ação."
+            "value" : "Você precisará criar um Segredo antes de configurar essa ação."
           }
         },
         "ro" : {
@@ -13405,7 +13861,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Configurar Usando Credencial"
+            "value" : "Configurar usando Segredo"
           }
         },
         "ro" : {
@@ -13590,7 +14046,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sem Credenciais"
+            "value" : "Sem Segredo"
           }
         },
         "ro" : {
@@ -13775,7 +14231,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Credencial"
+            "value" : "Segredo"
           }
         },
         "ro" : {
@@ -13960,7 +14416,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Você pode configurar mais de uma ferramenta, eles geralmente não interferem uns com os outros."
+            "value" : "Você pode configurar mais de uma ferramenta, elas geralmente não interferem umas com as outras."
           }
         },
         "ro" : {
@@ -14515,7 +14971,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Se você estiver tentando registrar seus commits no git, configure o Git Signing."
+            "value" : "Se você estiver tentando assinar seus commits no git, configure Assinatura no Git."
           }
         },
         "ro" : {
@@ -14700,7 +15156,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Se você está tentando configurar qualquer coisa em sua linha de comando para usar com Secretive, configure seu shell."
+            "value" : "Se você está tentando configurar qualquer coisa em sua linha de comando para usar o Secretive, configure seu shell."
           }
         },
         "ro" : {
@@ -14885,7 +15341,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Se você não sabia qual shell você usa e não alterou, você provavelmente está usando `%(shellName)@`."
+            "value" : "Se você não sabe qual shell usa e não o alterou, você provavelmente está usando `%(shellName)@`."
           }
         },
         "ro" : {
@@ -15255,7 +15711,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Configurando Ferramentas para Secretive"
+            "value" : "Configurando ferramentas para o Secretive"
           }
         },
         "ro" : {
@@ -15440,7 +15896,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "A maioria das ferramentas tentará procurar chaves SSH no disco em `~/.ssh`. Para usar o Secretive, precisamos configurar essas ferramentas para comunicar com o Secretive."
+            "value" : "A maioria das ferramentas tentará procurar chaves SSH no disco em `~/.ssh`. Para usar o Secretive, precisamos configurar essas ferramentas para falarem com o Secretive ao invés disso."
           }
         },
         "ro" : {
@@ -15625,7 +16081,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "O que devo Configurar?"
+            "value" : "O que devo configurar?"
           }
         },
         "ro" : {
@@ -16736,7 +17192,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Arquivo de Configuração"
+            "value" : "Arquivo de configuração"
           }
         },
         "ro" : {
@@ -17106,7 +17562,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Você pode pedir ao SSH para usar uma chave específica para um determinado host. Consulte a documentação na web para mais detalhes."
+            "value" : "Você pode dizer ao SSH para usar uma chave específica com determinado host. Consulte a documentação na web para mais detalhes."
           }
         },
         "ro" : {
@@ -17848,7 +18304,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Assinatura Git"
+            "value" : "Assinatura no Git"
           }
         },
         "ro" : {
@@ -18405,7 +18861,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Visualizar no GitHub"
+            "value" : "Ver no GitHub"
           }
         },
         "ro" : {
@@ -18590,7 +19046,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ver Documentação na Web"
+            "value" : "Ver documentação na web"
           }
         },
         "ro" : {
@@ -19145,7 +19601,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sem Armazenamento Seguro Disponível"
+            "value" : "Sem Armazenamento Seguro disponível"
           }
         },
         "ro" : {
@@ -19330,7 +19786,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Se você está buscando adicionar um para seu Mac, o YubiKey 5 Series é muito bom."
+            "value" : "Se você procura adicionar um para seu Mac, o YubiKey 5 Series é muito bom."
           }
         },
         "ro" : {
@@ -19516,7 +19972,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Deixar Destrancado"
+            "value" : "Manter destrancado"
           }
         },
         "ro" : {
@@ -19702,7 +20158,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Não Destravar"
+            "value" : "Não destrancar"
           }
         },
         "ro" : {
@@ -19769,6 +20225,12 @@
             "state" : "translated",
             "value" : "Name"
           }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nome"
+          }
         }
       }
     },
@@ -19779,6 +20241,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Certificate Name"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nome do Certificado"
           }
         }
       }
@@ -19975,6 +20443,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Matching Certificates"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Certificados correspondentes"
           }
         }
       }
@@ -21030,7 +21504,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Renomear"
+            "value" : "Editar"
           }
         },
         "ro" : {
@@ -21579,7 +22053,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Este aplicativo de ajuda é chamado **Secret Agent** e você pode vê-lo no Monitor de Atividades de tempo em tempo."
+            "value" : "Esse aplicativo auxiliar se chama **Secret Agent** e você pode vê-lo no Monitor de Atividades de tempos em tempos."
           }
         },
         "ro" : {
@@ -21764,7 +22238,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Secretive precisa configurar um aplicativo de ajuda para funcionar corretamente. Isso irá assinar requisições de clientes SSH no plano de fundo para que você não precise manter o aplicativo Secretive aberto."
+            "value" : "O Secretive precisa configurar um aplicativo auxiliar para funcionar corretamente. Ele irá assinar pedidos de clientes SSH em segundo plano, para que você não precise manter o aplicativo principal do Secretive aberto."
           }
         },
         "ro" : {
@@ -22134,7 +22608,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Configurar Agent"
+            "value" : "Configurar Agente"
           }
         },
         "ro" : {
@@ -23059,7 +23533,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Secretive irá periodicamente verificar com o GitHub para verificar se existe uma nova versão. Se você ver alguma requisição de rede para o GitHub, este é o porque."
+            "value" : "O Secretive vai verificar o GitHub periodicamente para saber se há uma nova versão. Se notar requisições de rede para o GitHub, esse é o motivo."
           }
         },
         "ro" : {
@@ -23673,6 +24147,192 @@
         }
       }
     },
+    "signed_connection_notification_description" : {
+      "comment" : "When the user performs an action using a secret, they're shown a notification describing what happened. This is the description, showing which secret was used. The placeholder is the name of the secret.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "af" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Using secret %1$(secretName)@"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Using secret %1$(secretName)@"
+          }
+        },
+        "ca" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Usant secret %1$(secretName)@"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Using secret %1$(secretName)@"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Using secret %1$(secretName)@"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Benutze Secret %1$(secretName)@"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Using secret %1$(secretName)@"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Using secret %1$(secretName)@ connecting to %2$(username)@@%3$(host)@"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Using secret %1$(secretName)@"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Käytetään salaisuutta %1$(secretName)@"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Utilisation du secret %1$(secretName)@"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Using secret %1$(secretName)@"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Using secret %1$(secretName)@"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Usato il Segreto %1$(secretName)@"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "%1$(secretName)@を使用中"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "비밀 %1$(secretName)@ 사용됨"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Using secret %1$(secretName)@"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Using secret %1$(secretName)@"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Użyto sekretu %1$(secretName)@"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Using secret %1$(secretName)@"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Utilizando o segredo %1$(secretName)@"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Using secret %1$(secretName)@"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Используя секрет %1$(secretName)@"
+          }
+        },
+        "sr" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Using secret %1$(secretName)@"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Using secret %1$(secretName)@"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Using secret %1$(secretName)@"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Using secret %1$(secretName)@"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Using secret %1$(secretName)@"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "使用密钥串 %1$(secretName)@"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "使用Secret「%1$(secretName)@」"
+          }
+        }
+      }
+    },
     "signed_notification_description" : {
       "comment" : "When the user performs an action using a secret, they're shown a notification describing what happened. This is the description, showing which secret was used. The placeholder is the name of the secret.",
       "extractionState" : "manual",
@@ -23800,7 +24460,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Utilizando o segredo %1$(secretName)@"
+            "value" : "Usando o segredo %1$(secretName)@"
           }
         },
         "ro" : {
@@ -23986,7 +24646,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Requisição Assinada fr %1$(appName)@"
+            "value" : "Assinado pedido de %1$(appName)@"
           }
         },
         "ro" : {
@@ -24041,6 +24701,192 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "已認證來自「%1$(appName)@」的請求"
+          }
+        }
+      }
+    },
+    "signed_signature_notification_description" : {
+      "comment" : "When the user performs an action using a secret, they're shown a notification describing what happened. This is the description, showing which secret was used. The placeholder is the name of the secret.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "af" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Using secret %1$(secretName)@"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Using secret %1$(secretName)@"
+          }
+        },
+        "ca" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Usant secret %1$(secretName)@"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Using secret %1$(secretName)@"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Using secret %1$(secretName)@"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Benutze Secret %1$(secretName)@"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Using secret %1$(secretName)@"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Using secret %1$(secretName)@ for %2$(namespace)@"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Using secret %1$(secretName)@"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Käytetään salaisuutta %1$(secretName)@"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Utilisation du secret %1$(secretName)@"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Using secret %1$(secretName)@"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Using secret %1$(secretName)@"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Usato il Segreto %1$(secretName)@"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "%1$(secretName)@を使用中"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "비밀 %1$(secretName)@ 사용됨"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Using secret %1$(secretName)@"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Using secret %1$(secretName)@"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Użyto sekretu %1$(secretName)@"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Using secret %1$(secretName)@"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Utilizando o segredo %1$(secretName)@"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Using secret %1$(secretName)@"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Используя секрет %1$(secretName)@"
+          }
+        },
+        "sr" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Using secret %1$(secretName)@"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Using secret %1$(secretName)@"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Using secret %1$(secretName)@"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Using secret %1$(secretName)@"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Using secret %1$(secretName)@"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "使用密钥串 %1$(secretName)@"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "使用Secret「%1$(secretName)@」"
           }
         }
       }
@@ -24171,7 +25017,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Cartões com chip"
+            "value" : "Smart Card"
           }
         },
         "ro" : {
@@ -24356,7 +25202,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sem Nome"
+            "value" : "Sem nome"
           }
         },
         "ro" : {
@@ -24541,7 +25387,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Atualização Crítica de Segurança Requerida"
+            "value" : "Atualização Crítica de Segurança necessária"
           }
         },
         "ro" : {
@@ -24911,7 +25757,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Atualização Disponível"
+            "value" : "Atualização disponível"
           }
         },
         "ro" : {
@@ -25655,7 +26501,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Clique para Atualizar"
+            "value" : "Clique para atualizar"
           }
         },
         "ro" : {
@@ -26026,7 +26872,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Notas de Mudanças"
+            "value" : "Notas de Lançamento"
           }
         },
         "ro" : {
@@ -26211,7 +27057,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Versão de Teste"
+            "value" : "Build de Teste"
           }
         },
         "ro" : {
@@ -26766,7 +27612,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Baixar a última Nightly Build"
+            "value" : "Baixar a Nightly Build mais recente"
           }
         },
         "ro" : {
@@ -26826,5 +27672,5 @@
       }
     }
   },
-  "version" : "1.0"
+  "version" : "1.2"
 }
